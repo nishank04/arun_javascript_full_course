@@ -141,3 +141,98 @@ lines')
 console.log(`String with 
 multiple 
 lines`)
+
+////Taking Decision: if / else statements
+// if (conditon) {
+
+// } else {
+
+// }
+
+//const age = 25;
+
+// if (age >= 18) {
+//     console.log(`Nishank can start driving license`)
+// } else {
+//     const yearLeft = 18 - age;
+//     console.log(`Nishank is too young. Wait another ${yearLeft} years`)
+// }
+
+///Coding challenge 2
+
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
+
+
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 85;
+const heightJohn = 1.76;
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+
+if (BMIMark > BMIJohn) {
+    console.log(`Mark's bmi ${BMIMark} is greater than john's BMI ${BMIJohn}`)
+} else{
+    console.log(`John's bmi ${BMIJohn} is greater than mark's BMI ${BMIMark}`)   
+}
+
+////type conversion
+const inputYear = Number('1991');
+console.log(inputYear, typeof inputYear)
+console.log(inputYear + 18)
+
+console.log(Number('Nishank'))
+console.log(typeof NaN)
+
+console.log(String(23), 23)
+console.log(typeof String(23), typeof 23)
+
+//type coercion
+console.log('I am ' + 23 + ' years old');
+console.log('23' + 10 - 3);
+console.log('23' / '2');
+console.log('23' > '18');
+
+let n = '1' + 1; // '11'
+n = n - 1;
+console.log(n);
+
+///truthly and falsely values
+
+//5 values in js which are false : 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Nishank'));
+console.log(Boolean({}));
+console.log(Boolean([]));
+console.log(Boolean(''));
+
+const money = 0;
+if (money) {
+    console.log('good')
+} else {
+    console.log('you should get a job')
+}
+
+
+////Equality Operator: == vs ===
+const age = '18';
+if (age === 18) {
+    console.log(`Everything matching`)
+}
+
+if (age == 18) console.log(`something is matching`)
+
+///logical operator
+
+const hasDriverLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDriverLicense && hasGoodVision)
+console.log(hasDriverLicense || hasGoodVision)
+console.log(hasDriverLicense)
