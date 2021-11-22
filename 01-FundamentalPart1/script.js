@@ -75,18 +75,18 @@ let jonas_singh = "hhgjh"
 
 // const isFullAge = ageJonas >=18
 
-const now = 2037;
-const ageJonas = now - 1991;
-const ageNishank = now - 2018;
+// const now = 2037;
+// const ageJonas = now - 1991;
+// const ageNishank = now - 2018;
 
-console.log(now - 1991 > now - 2018);
+// console.log(now - 1991 > now - 2018);
 
-let x, y;
-x = y = 23 -10 -5; // x = y = 8, x = 8
-console.log(x, y)
+// let x, y;
+// x = y = 23 -10 -5; // x = y = 8, x = 8
+// console.log(x, y)
 
-const averageAge = (ageJonas + ageNishank) / 2;
-console.log(ageJonas, ageNishank, averageAge)
+// const averageAge = (ageJonas + ageNishank) / 2;
+// console.log(ageJonas, ageNishank, averageAge)
 
 ////////////////////////////////////
 // Coding Challenge #1
@@ -123,24 +123,24 @@ console.log(BMIMark, BMIJohn, markHigherBMI);*/
 
 
 ///Strings and Template Literals
-const firstName = 'Nishakn';
-const job = 'teacher';
-const birthYear = 1991;
-const year = 2037;
+// const firstName = 'Nishakn';
+// const job = 'teacher';
+// const birthYear = 1991;
+// const year = 2037;
 
-const nishank = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!'; //String literal
-console.log(nishank)
+// const nishank = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!'; //String literal
+// console.log(nishank)
 
-const nishankNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}` ///Template literal no need of quotes and no need + sign to concatenate. To concatenate we use ${}
-console.log(nishankNew)
+// const nishankNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}` ///Template literal no need of quotes and no need + sign to concatenate. To concatenate we use ${}
+// console.log(nishankNew)
 
-console.log('String with \n\
-multiple \n\
-lines')
+// console.log('String with \n\
+// multiple \n\
+// lines')
 
-console.log(`String with 
-multiple 
-lines`)
+// console.log(`String with 
+// multiple 
+// lines`)
 
 ////Taking Decision: if / else statements
 // if (conditon) {
@@ -166,82 +166,82 @@ lines`)
 // const heightJohn = 1.95;
 
 
-const massMark = 95;
-const heightMark = 1.88;
-const massJohn = 85;
-const heightJohn = 1.76;
+// const massMark = 95;
+// const heightMark = 1.88;
+// const massJohn = 85;
+// const heightJohn = 1.76;
 
-const BMIMark = massMark / heightMark ** 2;
-const BMIJohn = massJohn / (heightJohn * heightJohn);
+// const BMIMark = massMark / heightMark ** 2;
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
 
-if (BMIMark > BMIJohn) {
-    console.log(`Mark's bmi ${BMIMark} is greater than john's BMI ${BMIJohn}`)
-} else{
-    console.log(`John's bmi ${BMIJohn} is greater than mark's BMI ${BMIMark}`)   
-}
+// if (BMIMark > BMIJohn) {
+//     console.log(`Mark's bmi ${BMIMark} is greater than john's BMI ${BMIJohn}`)
+// } else{
+//     console.log(`John's bmi ${BMIJohn} is greater than mark's BMI ${BMIMark}`)   
+// }
 
-////type conversion
-const inputYear = Number('1991');
-console.log(inputYear, typeof inputYear)
-console.log(inputYear + 18)
+// ////type conversion
+// const inputYear = Number('1991');
+// console.log(inputYear, typeof inputYear)
+// console.log(inputYear + 18)
 
-console.log(Number('Nishank'))
-console.log(typeof NaN)
+// console.log(Number('Nishank'))
+// console.log(typeof NaN)
 
-console.log(String(23), 23)
-console.log(typeof String(23), typeof 23)
+// console.log(String(23), 23)
+// console.log(typeof String(23), typeof 23)
 
-//type coercion
-console.log('I am ' + 23 + ' years old');
-console.log('23' + 10 - 3);
-console.log('23' / '2');
-console.log('23' > '18');
+// //type coercion
+// console.log('I am ' + 23 + ' years old');
+// console.log('23' + 10 - 3);
+// console.log('23' / '2');
+// console.log('23' > '18');
 
-let n = '1' + 1; // '11'
-n = n - 1;
-console.log(n);
+// let n = '1' + 1; // '11'
+// n = n - 1;
+// console.log(n);
 
-///truthly and falsely values
+// ///truthly and falsely values
 
-//5 values in js which are false : 0, '', undefined, null, NaN
+// //5 values in js which are false : 0, '', undefined, null, NaN
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean('Nishank'));
-console.log(Boolean({}));
-console.log(Boolean([]));
-console.log(Boolean(''));
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean('Nishank'));
+// console.log(Boolean({}));
+// console.log(Boolean([]));
+// console.log(Boolean(''));
 
-const money = 0;
-if (money) {
-    console.log('good')
-} else {
-    console.log('you should get a job')
-}
+// const money = 0;
+// if (money) {
+//     console.log('good')
+// } else {
+//     console.log('you should get a job')
+// }
 
 
-////Equality Operator: == vs ===
-const age = '18';
-if (age === 18) {
-    console.log(`Everything matching`)
-}
+// ////Equality Operator: == vs ===
+// const age = '18';
+// if (age === 18) {
+//     console.log(`Everything matching`)
+// }
 
-if (age == 18) console.log(`something is matching`)
+// if (age == 18) console.log(`something is matching`)
 
-///logical operator
+// ///logical operator
 
-const hasDriverLicense = true;
-const hasGoodVision = false;
+// const hasDriverLicense = true;
+// const hasGoodVision = false;
 
-console.log(hasDriverLicense && hasGoodVision)
-console.log(hasDriverLicense || hasGoodVision)
-console.log(hasDriverLicense)
+// console.log(hasDriverLicense && hasGoodVision)
+// console.log(hasDriverLicense || hasGoodVision)
+// console.log(hasDriverLicense)
 
-if (hasDriverLicense && hasGoodVision) {
-    console.log(`Nishank is able to drive`)
-} else {
-    console.log(`Someone else should drive`)
-}
+// if (hasDriverLicense && hasGoodVision) {
+//     console.log(`Nishank is able to drive`)
+// } else {
+//     console.log(`Someone else should drive`)
+// }
 
 ////////////////////////////////////
 // Coding Challenge #3
@@ -292,33 +292,82 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 */
 
 ////Switch case
-const day = 'sunday';
-switch (day) {
-    case 'monday':///day === 'monday'
-        console.log('Plan course structure');
-        break;
-    case 'tuesday':
-        console.log('Prepare theory part');
-        break;
-    case 'wednesday':
-    case 'thursday':
-        console.log('Write code examples');
-        break;
-    case 'friday':
-        console.log('Record videos');
-        break;
-    case 'saturday':
-    case 'sunday':
-        console.log('enjoy the weekend')
-        break;
-    default:
-        console.log('not a valid day')
+// const day = 'sunday';
+// switch (day) {
+//     case 'monday':///day === 'monday'
+//         console.log('Plan course structure');
+//         break;
+//     case 'tuesday':
+//         console.log('Prepare theory part');
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log('Write code examples');
+//         break;
+//     case 'friday':
+//         console.log('Record videos');
+//         break;
+//     case 'saturday':
+//     case 'sunday':
+//         console.log('enjoy the weekend')
+//         break;
+//     default:
+//         console.log('not a valid day')
+// }
+
+// if (day === 'monday') {
+//     console.log('Plan course structure');
+// } else if (day === 'sunday' || day === 'saturday'){
+//     console.log('enjoy the weekend')
+// } else {
+//     console.log('not a valid day')
+// }
+
+// ////Statement and expression
+// 3 + 4
+// 1991
+// true && false && !false
+
+// if (23 > 10) {
+//     const str = '23 is bigger';
+// }
+
+///conditional (ternary) operator
+const age = 23;
+age >=18 ? console.log('I like to drink wine') : console.log('I like to drink water');
+
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+    drink2 = 'wine'
+} else {
+    drink2 = 'water'
 }
 
-if (day === 'monday') {
-    console.log('Plan course structure');
-} else if (day === 'sunday' || day === 'saturday'){
-    console.log('enjoy the weekend')
-} else {
-    console.log('not a valid day')
-}
+console.log(drink2);
+
+console.log(`I like to drink ${age >=18 ? 'wine' : 'water'}`)
+
+////////////////////////////////////
+// Coding Challenge #4
+
+/*
+Steven wants to build a very simple tip calculator for whenever he goes eating in a resturant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+
+1. Your task is to caluclate the tip, depending on the bill value. Create a variable called 'tip' for this. It's not allowed to use an if/else statement 😅 (If it's easier for you, you can start with an if/else statement, and then try to convert it to a ternary operator!)
+2. Print a string to the console containing the bill value, the tip, and the final value (bill + tip). Example: 'The bill was 275, the tip was 41.25, and the total value 316.25'
+
+TEST DATA: Test for bill values 275, 40 and 430
+
+HINT: To calculate 20% of a value, simply multiply it by 20/100 = 0.2
+HINT: Value X is between 50 and 300, if it's >= 50 && <= 300 
+
+*/
+
+/*
+const bill = 430;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+*/
