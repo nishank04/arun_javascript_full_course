@@ -168,3 +168,40 @@ console.log(friendss)
 
 friendss.shift();
 console.log(friendss)
+
+console.log(friendss.indexOf('Jay'))
+
+console.log(friendss.includes('Jay'))
+
+
+
+//assignment
+//current year is 2040
+///we need to make a function(modern javascript way) which take the values from array years and will calculate the age
+
+const calcAgeperson = function(yearOfBirth) {
+    return 2040 - yearOfBirth
+}
+
+const years = [1989, '1965', 'Ankit', 'Manager', true, '1991']
+
+const age = [calcAgeperson(years[0]), calcAgeperson(years[1]),
+calcAgeperson(years[2]),calcAgeperson(years[3]),calcAgeperson(years[4]),calcAgeperson(years[years.length-1])];
+console.log(age)
+console.log(calcAgeperson('1956'))
+
+
+///How to find a character or any combination from the arrays
+console.log(`${years}`)
+console.log(JSON.stringify(years))
+const str = String(years)
+console.log(str)
+if (years.some(v => str.includes('ger') )){
+    console.log(`its present`)
+}
+
+
+
+
+
+
