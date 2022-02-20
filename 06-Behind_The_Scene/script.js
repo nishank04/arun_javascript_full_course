@@ -138,17 +138,77 @@ function addDecl(a,b) {
 
 ///arguments keyword
 
-const addExpr = function (a, b) {
-    console.log(arguments);
-    return a + b;
+// const addExpr = function (a, b) {
+//     console.log(arguments);
+//     return a + b;
+// };
+// addExpr(2, 5);
+// addExpr(2, 5, 8, 12);
+
+// var addArrow = (a,b) => {
+//     console.log(arguments);
+//     return a + b;
+// }
+
+// addArrow(2, 5, 8);
+
+///primitives vs objects
+
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+    name: 'Nishank',
+    age: 30,
 };
-addExpr(2, 5);
-addExpr(2, 5, 8, 12);
 
-var addArrow = (a,b) => {
-    console.log(arguments);
-    return a + b;
-}
+const friend = me;
+console.log(friend);
+friend.age = 27;
+console.log('friend', friend)
+console.log('me:', me);
 
-addArrow(2, 5, 8);
+///Primitive vs object typr practice
 
+///Primitve type
+let lastName = 'Yadav';
+let oldLastName = lastName;
+lastName = 'Rao';
+console.log(lastName, oldLastName);
+
+///Reference Type or Object Type
+
+const jessica = {
+    firstName: 'Jessica',
+    lastName: 'Williams',
+    age: 27,
+};
+
+const marriedJessica = jessica;
+marriedJessica.lastName = 'Davis';
+console.log('Before Marriage:', jessica);
+console.log('After Marriage:', marriedJessica);
+
+//Copying objects
+const jessica2 = {
+    firstName: 'Jessica',
+    lastName: 'Williams',
+    age: 27,
+    family: ['Alice', 'Bob'],
+};
+
+const jessicaCopy = Object.assign({}, jessica2);
+console.log(jessicaCopy);
+
+jessicaCopy.lastName = 'Davis';
+
+console.log(jessicaCopy);
+console.log(jessica2);
+
+jessicaCopy.family.push('Nishank');
+jessicaCopy.family.push('Arun');
+console.log(jessicaCopy);
+console.log(jessica2)
